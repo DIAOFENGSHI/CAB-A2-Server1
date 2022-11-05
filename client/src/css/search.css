@@ -1,0 +1,13 @@
+.fixButton {
+  position: fixed;
+  left: 0;
+  z-index: 3;
+  top: 150px;
+}
+
+.fixCard {
+  position: fixed;
+  left: 0;
+  z-index: 4;
+  top: 200px;
+}
