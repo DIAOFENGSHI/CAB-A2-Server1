@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button, Card, ListGroup, ListGroupItem } from 'reactstrap'
 import '../css/search.css'
 
-
+// This component provides a Search list, which can delete objects and send requests.
 export default function Search (props) {
   const [view, setView] = useState(false)
 

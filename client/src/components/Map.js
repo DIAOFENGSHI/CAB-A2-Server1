@@ -6,7 +6,7 @@ const center = {
   lat: -27.47,
   lng: 153.026
 }
-
+// This is the Google Maps API provided by Google Maps
 function Map (props) {
   const google = window.google = window.google ? window.google : {}
   const [activeMarker, setActiveMarker] = useState(null)

@@ -27,10 +27,12 @@ export default function App () {
   const [InStatus, setInStatus] = useState({ "status": "", "text": "" })
   const [traReStatus, setTraReStatus] = useState({ "status": "", "text": "" })
 
+  // Google API
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyCQ1LyU9d52CXM2acseyFBFhU9SlHv9HXQ"
   })
 
+  // This method gets the Markers and top ten information from the path to init
   async function getData () {
     let res = await fetch("/init")
     setInStatus({ "status": res.status, "text": res.statusText })
@@ -40,6 +42,7 @@ export default function App () {
     return [mar, top]
   }
 
+  // This method does the vehicle calculation for the selected location
   async function search () {
     setTraReStatus({ "status": "", "text": "" })
     setLoading(true)
@@ -63,6 +66,7 @@ export default function App () {
     }
   }
 
+  // Updating the top 10 list
   async function updateList () {
     try {
       let res = await fetch("/init")
@@ -74,6 +78,7 @@ export default function App () {
     }
   }
 
+  // Delete objects from the search list
   async function deleteList () {
     let id = searchID
     let description = searchDescription

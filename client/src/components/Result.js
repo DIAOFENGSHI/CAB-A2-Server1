@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/result.css'
 import { PacmanLoader } from 'react-spinners'
+
+// This component is provided with the result list
 export default function Result (props) {
 
   return (

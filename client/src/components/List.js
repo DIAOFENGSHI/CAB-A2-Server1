@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/list.css'
 import { Table, ListGroupItem } from 'reactstrap'
 
-
+// This component is showing the top ten searches.
 export default function List (props) {
   return (
     <div>
